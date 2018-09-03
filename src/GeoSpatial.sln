@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27924.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeoSpatial.Tests", "GeoSpatial.Tests\GeoSpatial.Tests.csproj", "{62B7D0BC-59D4-4336-8915-58C6D66460DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoSpatial.Console", "GeoSpatial.Console\GeoSpatial.Console.csproj", "{717B0D9E-0E01-41F9-95C5-1399614C4BDA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62B7D0BC-59D4-4336-8915-58C6D66460DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62B7D0BC-59D4-4336-8915-58C6D66460DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62B7D0BC-59D4-4336-8915-58C6D66460DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62B7D0BC-59D4-4336-8915-58C6D66460DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{717B0D9E-0E01-41F9-95C5-1399614C4BDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{717B0D9E-0E01-41F9-95C5-1399614C4BDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{717B0D9E-0E01-41F9-95C5-1399614C4BDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{717B0D9E-0E01-41F9-95C5-1399614C4BDA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {17582FB4-5E6B-40D4-8E2B-B5C71B39C72A}
+	EndGlobalSection
+EndGlobal
