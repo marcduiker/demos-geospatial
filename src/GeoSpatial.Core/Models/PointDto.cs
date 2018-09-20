@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace GeoSpatial.Console.Models
+namespace GeoSpatial.Core.Models
 {
     public class PointDto
     {

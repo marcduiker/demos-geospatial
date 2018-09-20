@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using GeoAPI.Geometries;
-using GeoSpatial.Console.Models;
+using GeoSpatial.Core.Models;
 using NetTopologySuite.Features;
 using NetTopologySuite.Geometries;
 
-namespace GeoSpatial.Console
+namespace GeoSpatial.Core
 {
     public class FeatureConverter
     {

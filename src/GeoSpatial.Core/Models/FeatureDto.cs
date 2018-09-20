@@ -1,8 +1,6 @@
-﻿using GeoSpatial.Console.Models;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
-
-namespace GeoSpatial.Console
+namespace GeoSpatial.Core.Models
 {
     public class FeatureDto
     {

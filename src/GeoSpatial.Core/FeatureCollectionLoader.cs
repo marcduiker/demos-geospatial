@@ -2,7 +2,7 @@
 using NetTopologySuite.Features;
 using NetTopologySuite.IO;
 
-namespace GeoSpatial.Console
+namespace GeoSpatial.Core
 {
     public class FeatureCollectionLoader
     {

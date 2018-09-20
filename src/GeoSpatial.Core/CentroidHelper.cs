@@ -3,7 +3,7 @@ using System.Linq;
 using GeoAPI.Geometries;
 using NetTopologySuite.Geometries;
 
-namespace GeoSpatial.Console
+namespace GeoSpatial.Core
 {
     public class CentroidHelper
     {

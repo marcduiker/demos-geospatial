@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using GeoAPI.Geometries;
 using NetTopologySuite.Features;
 
-namespace GeoSpatial.Console
+namespace GeoSpatial.Core
 {
     public class FeatureCollectionHelper
     {

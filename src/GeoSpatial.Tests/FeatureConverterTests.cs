@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using GeoAPI.Geometries;
-using GeoSpatial.Console;
+using GeoSpatial.Core;
 using NetTopologySuite.Features;
 using NetTopologySuite.Geometries;
 using Xunit;

@@ -1,6 +1,6 @@
 using System.Linq;
 using GeoAPI.Geometries;
-using GeoSpatial.Console;
+using GeoSpatial.Core;
 using Xunit;
 using Xunit.Abstractions;
 

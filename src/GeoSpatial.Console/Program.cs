@@ -2,6 +2,8 @@
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using GeoSpatial.Core;
+using GeoSpatial.Core.Models;
 
 namespace GeoSpatial.Console
 {
