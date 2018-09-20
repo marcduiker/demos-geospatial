@@ -50,7 +50,6 @@ namespace GeoSpatial.Tests
             var featureDto = converter.ConvertFeatureToDto(feature);
 
             // Assert
-            
             Assert.Equal(name, featureDto.Name);
             Assert.Equal(longValue, featureDto.PointGeometry.Coordinates[0]);
             Assert.Equal(latValue, featureDto.PointGeometry.Coordinates[1]);
@@ -72,7 +71,6 @@ namespace GeoSpatial.Tests
             var featureDto = converter.ConvertFeatureToDto(feature);
 
             // Assert
-
             Assert.Empty(featureDto.Name);
         }
 
@@ -92,7 +90,6 @@ namespace GeoSpatial.Tests
             var featureDto = converter.ConvertFeatureToDto(feature);
 
             // Assert
-
             Assert.Empty(featureDto.Category);
         }
     }

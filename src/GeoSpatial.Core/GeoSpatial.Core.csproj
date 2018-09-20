@@ -5,21 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="GeoAPI">
-      <HintPath>..\..\..\..\..\..\Users\MarcDuiker\.nuget\packages\geoapi.core\1.7.5\lib\netstandard2.0\GeoAPI.dll</HintPath>
-    </Reference>
-    <Reference Include="NetTopologySuite">
-      <HintPath>..\..\..\..\..\..\Users\MarcDuiker\.nuget\packages\nettopologysuite.core\1.15.0\lib\netcoreapp2.0\NetTopologySuite.dll</HintPath>
-    </Reference>
-    <Reference Include="NetTopologySuite.Features">
-      <HintPath>..\..\..\..\..\..\Users\MarcDuiker\.nuget\packages\nettopologysuite.features\1.15.0\lib\netstandard2.0\NetTopologySuite.Features.dll</HintPath>
-    </Reference>
-    <Reference Include="NetTopologySuite.IO.GeoJSON">
-      <HintPath>..\..\..\..\..\..\Users\MarcDuiker\.nuget\packages\nettopologysuite.io.geojson\1.15.0\lib\netstandard2.0\NetTopologySuite.IO.GeoJSON.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\..\..\..\..\Program Files\dotnet\sdk\NuGetFallbackFolder\newtonsoft.json\9.0.1\lib\netstandard1.0\Newtonsoft.Json.dll</HintPath>
-    </Reference>
+    <PackageReference Include="NetTopologySuite" Version="1.15.1" />
+    <PackageReference Include="NetTopologySuite.IO.GeoJSON" Version="1.15.0" />
   </ItemGroup>
 
-</Project>
+  </Project>
