@@ -7,12 +7,34 @@ namespace GeoSpatial.Console
 {
     public class CentroidHelper
     {
-        public static IPoint GetCentroidForCoordinates(IEnumerable<Coordinate> coordinates)
+        public static IPoint GetCentroidForCoordinates(IList<Coordinate> coordinates, bool forcePolygon = false)
         {
+            IList<Coordinate> coordinateList = new List<Coordinate>(coordinates);
             var geometryFactory = new GeometryFactory();
-            var lineString = geometryFactory.CreateLineString(coordinates.ToArray());
+            var firstCoordinate = coordinateList.First();
+            var lastCoordinate = coordinateList.Last();
+            const double tolerance = 0.0001;
+            
+            // Add the first coordinate to the coordinate collection to force a polygon.
+            if (forcePolygon)
+            {
+                coordinateList.Add(firstCoordinate);
+                lastCoordinate = coordinateList.Last();
+            }
 
-            return lineString.Centroid;
+            IPoint centroid;
+            if (firstCoordinate.Equals2D(lastCoordinate, tolerance))
+            {
+                var polygon = geometryFactory.CreatePolygon(coordinateList.ToArray());
+                centroid = polygon.Centroid;
+            }
+            else
+            {
+                var lineString = geometryFactory.CreateLineString(coordinateList.ToArray());
+                centroid = lineString.Centroid;
+            }
+
+            return centroid;
         }
 
         public static Coordinate GetLargestDistanceFromCentroid(IEnumerable<Coordinate> coordinates, IPoint centroid)
